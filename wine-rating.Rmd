@@ -2,8 +2,8 @@
 title: "Predicting the Quality of Wines"
 author: "Jae-Ho Lee"
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include = FALSE}
