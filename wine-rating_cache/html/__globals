@@ -1,0 +1,17 @@
+unnamed-chunk-1	library
+unnamed-chunk-2	
+load-data	%>%	::	as.factor	as_tibble	mutate	quality	select
+test-train-split	initial_split	testing	training	wine
+train-control	trainControl
+unnamed-chunk-3	set.seed
+random-forest	~	cv	train	wine_trn
+unnamed-chunk-4	set.seed
+naive-bayes	~	cv	train	wine_trn
+unnamed-chunk-5	set.seed
+svm	~	cv	train	wine_trn
+unnamed-chunk-6	set.seed
+multinomial	~	cv	train	wine_trn
+accuracy-table	%>%	~	c	kable	kable_styling	list	map_dbl	multinom_mod	nb_mod	rf_mod	svm_mod	tibble
+test-model	$	%>%	==	kable	kable_styling	mean	predict	rf_mod	tibble	wine_tst
+unnamed-chunk-7	$	%>%	addmargins	kable	kable_styling	predict	rf_mod	table	wine_tst
+unnamed-chunk-8	%>%	::	~	aes	alcohol	c	color	facet_wrap	factor	geom_bar	geom_boxplot	geom_point	geom_smooth	ggplot	labs	quality_cat	scale_fill_manual	theme_bw	wine_trn
