@@ -1,7 +1,7 @@
-# Predicting Wine Quality: Project Overview
+# Predicting the Rating of Wines: Project Overview
 
 - Produced a report that explores statistical models for predicting the rating of wine based on its physicochemical properties
-
+- Optimized Random Forest, Naive Bayes, SVM, Multinomial Regression models 
 
 
 ***
